@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/salary/salary",
+    "pages/index/index",
+    "pages/bonus/bonus",
+    "pages/loan/loan"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#e64340",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "box-shadow": "0 0 6px 0",
+    "list": [
+      {
+        "pagePath": "pages/salary/salary",
+        "text": "工资",
+        "iconPath": "/images/salary.png",
+        "selectedIconPath": "/images/salary_press.png"
+      },
+      {
+        "pagePath": "pages/bonus/bonus",
+        "text": "年终奖",
+        "iconPath": "/images/bonus.png",
+        "selectedIconPath": "/images/bonus_press.png"
+      },
+      {
+        "pagePath": "pages/loan/loan",
+        "text": "贷款",
+        "iconPath": "/images/loan.png",
+        "selectedIconPath": "/images/loan_press.png"
+      }
+    ]
+  }
+}
