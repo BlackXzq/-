@@ -1,1 +1,82 @@
-/* pages/loan/loan.wxss */
+page {
+  background-color: #f2f2f2;
+}
+
+.contanier {
+  min-height: 100%;
+  overflow: hidden;
+  overflow-y: hidden;
+}
+.header {
+  display: flex;
+  margin: 30rpx;
+}
+
+.equalBtn {
+  width: 50%;
+  background-color: white;
+  font-size: 35rpx;
+  border-radius: 0rpx;
+}
+
+.equalBtn.equalBenxi {
+  border:0.5rpx solid #1AAD19;
+  border-right: none;
+  border-top-left-radius: 10rpx;
+  border-bottom-left-radius: 10rpx;
+}
+
+.equalBtn.active {
+  color: white;
+  background-color: #1AAD19;
+}
+
+.equalBtn.equalBtn.equalBenjin {
+  border:0.5rpx solid #1AAD19;
+  border-left: none;
+  border-top-right-radius: 10rpx;
+  border-bottom-right-radius: 10rpx
+}
+
+.equalBtn::after {
+  border: none;
+}
+
+
+
+.content {
+  margin: 30rpx 0rpx;
+}
+
+.cell {
+  display: flex;
+  flex-direction: row;
+  font-size: 30rpx;
+  padding: 10rpx 30rpx;
+  background-color: #fff;
+  border-bottom: 1rpx solid #f0f0f0;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.cell input {
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: right;
+  position: absolute;
+  right: 90rpx;
+}
+
+.cell_tag {
+  position: absolute;
+  height: 100%;
+  right: 30rpx;
+}
+
+.footer {
+  margin: 50rpx 30rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 35rpx;
+}
+

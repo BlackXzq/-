@@ -1,15 +1,15 @@
 {
   "pages": [
+    "pages/loan/loan",
     "pages/salary/salary",
     "pages/index/index",
-    "pages/bonus/bonus",
-    "pages/loan/loan"
+    "pages/bonus/bonus"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#e64340",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
   },
 
   "tabBar": {

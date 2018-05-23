@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    selectLeft:true
   },
 
   /**
@@ -13,6 +13,36 @@ Page({
    */
   onLoad: function (options) {
   
+  },
+  tapLeftBtn: function() {
+    this.setData({
+      selectLeft: true
+    })
+  },
+  
+  taprightBtn:function() {
+    this.setData({
+      selectLeft: false
+    })
+  },
+
+  caculateTap: function(option) {
+    var moneyss = option.detail.value.moneys;
+    var monthss = option.detail.value.months;
+    var ratess = option.detail.value.rates;
+    
+    if(moneyss == "" || moneyss == "0") {
+      wx.showToast({
+        title: '请输入有限金额',
+        complete: function() {
+          
+        }
+      })
+    }
+
+    console.log(moneyss);
+    console.log(monthss);
+    console.log(ratess);
   },
 
   /**

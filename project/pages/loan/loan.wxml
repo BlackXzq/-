@@ -1,2 +1,30 @@
-<!--pages/loan/loan.wxml-->
-<text>pages/loan/loan.wxml</text>
+
+<view class="contanier">
+
+  <view class='header'>
+    <button bindtap='tapLeftBtn' class='equalBtn equalBenxi {{selectLeft ? "active" : ""}}'>等额本息</button>
+    <button bindtap='taprightBtn' class='equalBtn equalBenjin {{selectLeft ? "" : "active"}}'>等额本金</button>
+  </view>
+
+  <view class='content'>
+    <form bindsubmit='caculateTap'>
+      <view class='cell'>
+        <view class='cell_title'>贷款金额</view>
+        <input type="number" name="moneys" placeholder="请输入贷款金额"/>
+        <view class='cell_tag'>元</view>
+      </view>
+      <view class='cell'>
+        <view class='cell_title'>贷款期限</view>
+        <input type="number" name="months" placeholder="请输入贷款期限"/>
+        <view class='cell_tag'>月</view>
+      </view>
+      <view class='cell'>
+        <view class='cell_title'>年利率</view>
+        <input type="digit" name="rates" value="4.9" placeholder="请输入贷款金额"/>
+        <view class='cell_tag'>%</view>
+      </view>
+      <button class='footer' type='primary' form-type='submit'>计算</button>
+    </form>
+  </view>
+
+</view>
