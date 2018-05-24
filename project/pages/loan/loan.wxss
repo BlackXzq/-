@@ -1,12 +1,10 @@
 page {
-  background-color: #f2f2f2;
-}
-
-.contanier {
   min-height: 100%;
+  background-color: #f2f2f2;
   overflow: hidden;
   overflow-y: hidden;
 }
+
 .header {
   display: flex;
   margin: 30rpx;

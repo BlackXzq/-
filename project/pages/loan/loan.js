@@ -33,16 +33,39 @@ Page({
     
     if(moneyss == "" || moneyss == "0") {
       wx.showToast({
-        title: '请输入有限金额',
-        complete: function() {
-          
-        }
+        title: '请输入有效金额',
+        icon: "none",
+        duration: 1500
       })
+      return;
     }
 
-    console.log(moneyss);
-    console.log(monthss);
-    console.log(ratess);
+    if (monthss == "" || monthss == "0") {
+      wx.showToast({
+        title: '请输入有效贷款期限',
+        icon: "none",
+        duration: 1500
+      })
+      return;
+    }
+
+    if (ratess == "" || ratess == "0") {
+      wx.showToast({
+        title: '请输入有效贷款利率',
+        icon: "none",
+        duration: 1500
+      })
+      return;
+    }
+    this.equalBenxiStyle(parseInt(moneyss), parseInt(monthss), parseFloat(ratess/1200.0));
+
+  },
+// 等额本息：〔贷款本金×月利率×（1＋月利率）＾还款月数〕÷〔（1＋月利率）＾还款月数－1〕
+  equalBenxiStyle: function(money, months, rates) {
+    var jun = (money * rates * Math.pow((1+rates),months))/(Math.pow((1+rates), months)-1);
+    console.log(jun.toFixed(2));
+    console.log(months);
+    console.log(rates);
   },
 
   /**

@@ -20,7 +20,7 @@
       </view>
       <view class='cell'>
         <view class='cell_title'>年利率</view>
-        <input type="digit" name="rates" value="4.9" placeholder="请输入贷款金额"/>
+        <input type="digit" name="rates" value="4.9" placeholder="请输入贷款利率"/>
         <view class='cell_tag'>%</view>
       </view>
       <button class='footer' type='primary' form-type='submit'>计算</button>
